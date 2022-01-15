@@ -1,1 +1,58 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: green;
+}
+.card {
+  width: 250px;
+  height: 350px;
+  background-color: white;
+  border-radius: 5%;
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
+}
+
+::before {
+  top: 20px;
+  left: 20px;
+  position: absolute;
+  font-size: 80px;
+}
+::after {
+  bottom: 20px;
+  right: 20px;
+  position: absolute;
+  font-size: 80px;
+}
+
+.numero {
+  font-size: 100px;
+  margin-top: 120px;
+  margin-left: 100px;
+  position: absolute;
+}
+
+.corazon::before,
+.corazon::after {
+  content: "♥";
+  color: red;
+}
+
+.diamante::before,
+.diamante::after {
+  content: "♦";
+  color: red;
+}
+
+.espada::before,
+.espada::after {
+  content: "♠";
+  color: black;
+}
+
+.trebol::before,
+.trebol::after {
+  content: "♣";
+  color: black;
+}
